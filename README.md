@@ -4,8 +4,8 @@
 
 # Gipsy v0.4-beta
 
-Gipsy es un lenguaje inspirado en Python, pensado para ser **natural, expresivo y tolerante**.  
-Esta versión **v0.4-beta** incluye nuevas features del lenguaje y herramientas listas para usar.
+Gipsy es un lenguaje inspirado en Python, pensado para ser **natural, expresivo y tolerante**.   
+Esta versión **v0.4-beta** incluye nuevas features del lenguaje y herramientas listas para usar. Creado por **Alejandro G Vera**, escritor, poeta e informático.
 
 ## ✨ Features (v0.4-beta)
 - `Use <mod> [as alias]` para importar módulos de Python (con fallback may/min).
