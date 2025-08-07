@@ -1,3 +1,7 @@
+<p style= "text-align=center">
+  <img src="Gipsy_logo_banner.png" alt="Gipsy Logo" width="1080">
+</p>
+
 # 📘 Gipsy v0.4-beta — Novedades
 
 > **Estado:** Beta. Se agregan `match/case`, `try/catch` y `type alias`
@@ -69,4 +73,3 @@ end
 
 ---
 
-¿Seguimos con validación blanda de tipos y `finally` para la rc? ✨
