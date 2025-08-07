@@ -1,0 +1,8 @@
+match 3
+    case 1
+        Say "uno"
+    case 2 or 3
+        Say "dos o tres"
+    else
+        Say "otro"
+end

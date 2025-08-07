@@ -1,0 +1,5 @@
+try
+    Say 1 / 0
+catch e
+    Say typeof e
+end
