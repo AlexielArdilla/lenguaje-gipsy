@@ -1,0 +1,3 @@
+Const GREETING = "Hola"
+include "lib_v0_4.gipsy"
+Say GREETING + ", " + nombre()

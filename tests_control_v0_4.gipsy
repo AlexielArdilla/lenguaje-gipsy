@@ -1,0 +1,13 @@
+x = 0
+while x < 3
+    Say x
+    x = x + 1
+end
+loop 3 times
+    Say "L"
+end
+if 2 < 3
+    Say "OK"
+else
+    Say "NO"
+end
