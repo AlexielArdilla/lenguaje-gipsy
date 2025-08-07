@@ -1,3 +1,18 @@
-Say "¿Cómo te llamás?"
-nombre = Ask
-Say "Hola, " + nombre
+### Calculadora básica con Gipsy ###
+
+Use math
+
+function cuadrado(x)
+    return x * x
+end
+
+Say "Dame un número:"
+n = Ask as number
+Say "El cuadrado es:"
+Say cuadrado(n)
+
+Say "La raíz cuadrada es:"
+Say math.sqrt(n)
+
+Say "Tipo de n:"
+Say typeof n
