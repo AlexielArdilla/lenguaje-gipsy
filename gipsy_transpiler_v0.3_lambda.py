@@ -1,5 +1,6 @@
 
 import sys
+import re
 
 def remove_multiline_comments(lines):
     new_lines = []
@@ -17,12 +18,11 @@ def remove_multiline_comments(lines):
 
 def transpile_line(line):
     stripped = line.strip()
+    line = re.sub(r"typeof\s+([\w_\[\]\"\'\.]+)", r"type(\1).__name__", line)
 
-    if stripped.startswith("Say typeof "):
-        expr = stripped[len("Say typeof "):].strip()
-        return f"print(type({expr}).__name__)"
     if stripped.startswith("Say "):
-        return "print(" + stripped[4:].strip() + ")"
+        say_expr = line.strip()[4:].strip()
+        return "print(" + say_expr + ")"
 
     if " = Ask" in stripped:
         var, rest = stripped.split("=", 1)
@@ -62,13 +62,14 @@ def transpile_line(line):
         lib = stripped.split()[1]
         return f"import {lib}"
 
-    if stripped.startswith("typeof "):
-        expr = stripped[len("typeof "):].strip()
-        return f"type({expr}).__name__"
-
     if stripped == "end":
         return "# end"
 
+    # Detectar funciones anónimas tipo: fun(x) return x * 2 end
+    anon_match = re.match(r"(\w+)\s*=\s*fun\((.*?)\)\s*return\s+(.*?)\s*end", line.strip())
+    if anon_match:
+        var_name, args, expr = anon_match.groups()
+        return f"{var_name} = lambda {args.strip()}: {expr.strip()}"
     return line
 
 def transpile_gipsy_to_python(source_code):
@@ -103,7 +104,7 @@ def transpile_gipsy_to_python(source_code):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Uso: python gipsy_transpiler_v0.3.py archivo.gipsy archivo.py")
+        print("Uso: python gipsy_transpiler_v0.3_final.py archivo.gipsy archivo.py")
         sys.exit(1)
 
     gipsy_file = sys.argv[1]

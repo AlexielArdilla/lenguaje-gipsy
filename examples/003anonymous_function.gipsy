@@ -1,0 +1,3 @@
+doble = fun(x) return x * 2 end
+Say "El doble de 6 es:"
+Say doble(6)

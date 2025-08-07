@@ -1,0 +1,6 @@
+Use math
+
+Say "Potencias de 2:"
+loop 5 times
+    Say math.pow(2, _)
+end

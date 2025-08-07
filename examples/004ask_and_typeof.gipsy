@@ -1,0 +1,3 @@
+nombre = Ask "¿Cómo te llamás?"
+Say "Hola, " + nombre
+Say "Tu tipo es: " + typeof nombre

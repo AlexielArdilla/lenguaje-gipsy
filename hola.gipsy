@@ -1,3 +1,0 @@
-Say "¿Cómo te llamás?"
-nombre = Ask
-Say "Hola, " + nombre

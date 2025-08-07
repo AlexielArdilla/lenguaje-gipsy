@@ -144,7 +144,7 @@ python gipsy_repl_v0.3.py
 ### Transpilador
 
 ```bash
-python gipsy_transpiler_v0.3_fix.py archivo.gipsy archivo.py
+python gipsy_transpiler_v0.3_lambda.py archivo.gipsy archivo.py
 python archivo.py
 ```
 
@@ -152,9 +152,12 @@ python archivo.py
 
 ## 📦 Archivos incluidos
 
-- `gipsy_repl_v0.3.py`: intérprete interactivo
-- `gipsy_transpiler_v0.3_fix.py`: transpilador a Python
-- `.gipsy`: archivos de código fuente Gipsy
+| Archivo | Descripción |
+|--------|-------------|
+| [`gipsy_repl_v0.3.py`](./gipsy_repl_v0.3.py) | Intérprete interactivo de Gipsy |
+| [`gipsy_transpiler_v0.3_lambda.py`](./gipsy_transpiler_v0.3_lambda.py) | Transpilador Gipsy → Python |
+| [`examples/*.gipsy`](./examples) | Archivos fuente en Gipsy con ejemplos |
+| [`gipsy_documentacion_v0.3.md`](./gipsy_documentacion_v0.3.md) | Documentación técnica |
 
 ---
 
@@ -177,4 +180,4 @@ python archivo.py
 ## 🗓️ Última actualización
 
 **Versión:** v0.3  
-**Fecha:** 7 de Agosto 2025 3:35 AM
+**Fecha:** 7 de Agosto 2025 4:22 AM

@@ -1,0 +1,10 @@
+function saludar(nombre)
+    if nombre == "Gipsy"
+        Say "¡Ese es mi nombre!"
+    else
+        Say "Hola, " + nombre
+    end
+end
+
+nombre = Ask "Tu nombre:"
+saludar(nombre)
