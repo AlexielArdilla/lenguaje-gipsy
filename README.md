@@ -29,6 +29,7 @@ Esta versión **v0.4-beta** incluye nuevas features del lenguaje y herramientas 
 | [`tests_try_v0_4_beta.gipsy`](./tests_try_v0_4_beta.gipsy)          | Prueba de la sintaxis `try / catch` |
 | [`tests_typealias_v0_4_beta.gipsy`](./tests_typealias_v0_4_beta.gipsy)    | Prueba de la sintaxis `type alias` |
 | [`README.md`](./README.md) | Instrucciones de uso, ejemplos y guía rápida |
+|[`Gipsy_v0.4beta.zip`](./Gipsy_v0.4beta.zip) | BUNDLE de la beta .zip |
 
 ## 🧪 Prueba rápida
 Crea o usa el archivo `tests_match_v0_4_beta.gipsy`:
